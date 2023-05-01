@@ -1,4 +1,4 @@
-# Basic Filestitch
+# QBasic Filestitch
 A simple QBasic program to combine CSV files into one CSV file. To accomplish that, here are some of the components required.
 
 ## Statements
