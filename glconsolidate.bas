@@ -1,7 +1,7 @@
 CLS
 
-DIM ids(4) AS STRING
-DIM outlets(4) AS STRING
+DIM ids(21) AS STRING
+DIM outlets(21) AS STRING
 
 ids(0) = "3544"
 outlets(0) = "BEM"
@@ -17,57 +17,44 @@ ids(5) = "3702"
 outlets(5) = "NP"
 ids(6) = "3703"
 outlets(6) = "BJ"
-ids(7) = "3705"
-outlets(7) = "AMK"
-ids(8) = "3706"
-outlets(8) = "CLM"
-ids(9) = "3707"
-outlets(9) = "COP"
-ids(10) = "3708"
-outlets(10) = "DTE"
-ids(11) = "3709"
-outlets(11) = "IMM"
-ids(12) = "3711"
-outlets(12) = "NEX"
-ids(13) = "3712"
-outlets(13) = "PZS"
-ids(14) = "3713"
-outlets(14) = "SPC"
-ids(15) = "3714"
-outlets(15) = "SUN"
-ids(16) = "3715"
-outlets(16) = "TAM"
-ids(17) = "3717"
-outlets(17) = "TP"
-ids(18) = "3718"
-outlets(18) = "WM"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-ids(x) = "0000"
-outlets(x) = "xx"
-
+ids(7) = "3704"
+outlets(7) = "PWP"
+ids(8) = "3705"
+outlets(8) = "AMK"
+ids(9) = "3706"
+outlets(9) = "CLM"
+ids(10) = "3707"
+outlets(10) = "COP"
+ids(11) = "3708"
+outlets(11) = "DTE"
+ids(12) = "3709"
+outlets(12) = "IMM"
+ids(13) = "3711"
+outlets(13) = "NEX"
+ids(14) = "3712"
+outlets(14) = "PZS"
+ids(15) = "3713"
+outlets(15) = "SPC"
+ids(16) = "3714"
+outlets(16) = "SUN"
+ids(17) = "3715"
+outlets(17) = "TAM"
+ids(18) = "3716"
+outlets(18) = "TP"
+ids(19) = "3717"
+outlets(19) = "TP"
+ids(20) = "3718"
+outlets(20) = "WM"
+ids(21) = "18002"
+outlets(21) = "VCT"
 
 INPUT "Date of file? (YYYYMMDD format, eg, 20221101)", FileDate$
 INPUT "Directory?", FileDir$
 
-OPEN "C:\" + FileDir$ + "\tx_" + FileDate$ + "_consolidated.csv" FOR OUTPUT AS #1
+OPEN "C:\" + FileDir$ + "\gl_" + FileDate$ + "_consolidated.csv" FOR OUTPUT AS #1
 
-FOR i = 0 TO 3 STEP 1
-    FileName$ = "C:\" + FileDir$ + "\tx_" + FileDate$ + "_" + ids(i) + ".csv"
+FOR i = 0 TO 21 STEP 1
+    FileName$ = "C:\" + FileDir$ + "\gl_" + FileDate$ + "_" + ids(i) + ".csv"
     PRINT FileName$
     OPEN FileName$ FOR INPUT AS #2
     IF LOF(2) = 0 THEN
