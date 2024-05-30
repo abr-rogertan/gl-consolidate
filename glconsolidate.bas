@@ -62,16 +62,21 @@ FOR i = 0 TO 21 STEP 1
         KILL FileName$
     ELSE
         DO WHILE NOT EOF(2)
-            INPUT #2, COLDATE$, COLTIME$, COLNUM$, COLITEM$, COLCAT$, COLQTY$, COLTYPE$
+            INPUT #2, COL1$, COL2$, COL3$, COL4$, COL5$, COL6$, COL7$, COL8$, COL9$, COL10$, COL11$, COL12$, COL13$
             InputStr$ = ""
-            InputStr$ = InputStr$ + CHR$(34) + COLDATE$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + COLTIME$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + COLNUM$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + COLITEM$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + COLCAT$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + COLQTY$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + COLTYPE$ + CHR$(34) + ","
-            InputStr$ = InputStr$ + CHR$(34) + outlets(i) + CHR$(34)
+            InputStr$ = InputStr$ + CHR$(34) + COL1$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL2$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL3$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL4$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL5$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL6$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL7$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL8$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL9$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL10$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL11$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL12$ + CHR$(34) + ","
+            InputStr$ = InputStr$ + CHR$(34) + COL13$ + CHR$(34)
             PRINT #1, InputStr$
         LOOP
         CLOSE #2
