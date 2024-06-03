@@ -45,8 +45,12 @@ ids(19) = "3717"
 outlets(19) = "TP"
 ids(20) = "3718"
 outlets(20) = "WM"
+ids(21) = "17422"
+outlets(21) = "AT2"
 ids(21) = "18002"
 outlets(21) = "VCT"
+ids(21) = "18222"
+outlets(21) = "PRM"
 
 INPUT "Date of file? (YYYYMMDD format, eg, 20221101)", FileDate$
 INPUT "Directory?", FileDir$
