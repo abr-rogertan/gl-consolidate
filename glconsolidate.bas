@@ -10,7 +10,7 @@ outlets(1) = "WWP"
 ids(2) = "3685"
 outlets(2) = "CWP"
 ids(3) = "3686"
-outlets(3) = "JRP"
+outlets(3) = "JP"
 ids(4) = "3687"
 outlets(4) = "J8"
 ids(5) = "3702"
@@ -51,13 +51,15 @@ ids(21) = "18002"
 outlets(21) = "VCT"
 ids(21) = "18222"
 outlets(21) = "PRM"
+ids(22) = "21043"
+outlets(22) = "TGP"
 
 INPUT "Date of file? (YYYYMMDD format, eg, 20221101)", FileDate$
 INPUT "Directory?", FileDir$
 
 OPEN "C:\" + FileDir$ + "\gl_" + FileDate$ + "_consolidated.csv" FOR OUTPUT AS #1
 
-FOR i = 0 TO 21 STEP 1
+FOR i = 0 TO 22 STEP 1
     FileName$ = "C:\" + FileDir$ + "\gl_" + FileDate$ + "_" + ids(i) + ".csv"
     PRINT FileName$
     OPEN FileName$ FOR INPUT AS #2
