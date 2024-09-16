@@ -1,7 +1,7 @@
 CLS
 
-DIM ids(21) AS STRING
-DIM outlets(21) AS STRING
+DIM ids(22) AS STRING
+DIM outlets(22) AS STRING
 
 ids(0) = "3544"
 outlets(0) = "BEM"
