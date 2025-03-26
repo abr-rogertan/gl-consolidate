@@ -1,7 +1,7 @@
 CLS
 
-DIM ids(25) AS STRING
-DIM outlets(25) AS STRING
+DIM ids(26) AS STRING
+DIM outlets(26) AS STRING
 
 ids(0) = "3544"
 outlets(0) = "BEM"
@@ -59,13 +59,15 @@ ids(24) = "17422"
 outlets(24) = "AT2"
 ids(25) = "21783"
 outlets(25) = "TM3"
+ids(26) = "25286"
+outlets(26) = "STP"
 
 INPUT "Date of file? (YYYYMMDD format, eg, 20221101)", FileDate$
 INPUT "Directory?", FileDir$
 
 OPEN "C:\" + FileDir$ + "\gl_" + FileDate$ + "_consolidated.csv" FOR OUTPUT AS #1
 
-FOR i = 0 TO 25 STEP 1
+FOR i = 0 TO 26 STEP 1
     FileName$ = "C:\" + FileDir$ + "\gl_" + FileDate$ + "_" + ids(i) + ".csv"
     PRINT FileName$
     OPEN FileName$ FOR INPUT AS #2
