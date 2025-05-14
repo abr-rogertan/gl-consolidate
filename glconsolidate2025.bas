@@ -1,7 +1,7 @@
 Cls
 
-Dim ids(26) As String
-Dim outlets(26) As String
+Dim ids(27) As String
+Dim outlets(27) As String
 
 ids(0) = "3544"
 outlets(0) = "BEM"
@@ -61,6 +61,8 @@ ids(25) = "21783"
 outlets(25) = "TM3"
 ids(26) = "25286"
 outlets(26) = "STP"
+ids(27) = "25807"
+outlets(27) = "GEN"
 
 Input "Date of file? (YYYYMMDD format, eg, 20221101)", FileDate$
 Input "Directory?", FileDir$
@@ -98,4 +100,3 @@ For i = 0 To 26 Step 1
 Next
 
 Close #1
-
