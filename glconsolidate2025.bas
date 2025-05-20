@@ -69,7 +69,7 @@ Input "Directory?", FileDir$
 
 Open "C:\" + FileDir$ + "\gl_" + FileDate$ + "_consolidated.csv" For Output As #1
 
-For i = 0 To 26 Step 1
+For i = 0 To 27 Step 1
     FileName$ = "C:\" + FileDir$ + "\gl_" + FileDate$ + "_" + ids(i) + ".csv"
     Print FileName$
     Open FileName$ For Input As #2
